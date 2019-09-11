@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "whereislibgen",
+  "builds": [
+    { "src": "/index.js", "use": "@now/node" }
+  ]
+}
+
