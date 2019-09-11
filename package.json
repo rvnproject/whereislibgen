@@ -1,5 +1,5 @@
 {
-  "name": "whereisscihub",
+  "name": "whereislibgen",
   "version": "0.3.0",
   "description": "A sample Node.js app using Express 4",
   "engines": {
@@ -14,6 +14,7 @@
     "cryptiles": "^4.1.2",
     "express": "^4.15.2",
     "node-fetch": "^2.1.1",
+    "now": "^16.2.0",
     "serve-favicon": "^2.4.5"
   },
   "devDependencies": {
