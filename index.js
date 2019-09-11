@@ -10,10 +10,6 @@ express()
   .use(favicon(path.join(__dirname, 'favicon.ico')))
   .get('/api', (req, res) => getUrls().then((urls) => res.send(urls)))
   .get('/go', (req, res) => getUrls().then((urls) => res.redirect(urls[0])))
-  .get('/go/*', (req, res) => getUrls().then((urls) => {
-    const url = new URL(encodeURIComponent(req.params[0]), urls[0]);
-    res.redirect(url.toString());
-  }))
   .get('/', async (req, res) => {
     if (req.hostname === 'whereislibgen.herokuapp.com') {
       return res.redirect('https://whereislibgen.now.sh/');
